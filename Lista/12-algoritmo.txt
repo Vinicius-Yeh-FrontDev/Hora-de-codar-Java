@@ -1,0 +1,5 @@
+INÍCIO
+    PARA i DE 10 ATÉ 1 COM PASSO -1 FAÇA
+        IMPRIMIR i
+    FIM PARA
+FIM

@@ -1,0 +1,27 @@
+INÍCIO
+    // Leitura dos dois números inteiros
+    LER primeiroNumero
+    LER segundoNumero
+
+    // Inicialização da soma e do contador
+    soma <- 0
+    contador <- 0
+
+    // Calcula e exibe a média aritmética
+    média <- (primeiroNumero + segundoNumero) / 2
+    ESCREVER "Média aritmética: ", média
+
+    // Calcula e exibe todos os números inteiros entre os dois números
+    PARA i DE primeiroNumero + 1 ATÉ segundoNumero - 1 FAÇA
+        soma <- soma + i
+        contador <- contador + 1
+        ESCREVER i
+    FIM PARA
+
+    // Calcula e exibe a média dos números entre os dois números
+    SE contador > 0 ENTÃO
+        médiaEntreNumeros <- soma / contador
+        ESCREVER "Média dos números entre os dois números: ", médiaEntreNumeros
+    FIM SE
+
+FIM

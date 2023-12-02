@@ -1,0 +1,25 @@
+INÍCIO
+    // Alturas iniciais de Anacleto e Felisberto
+    alturaAnacleto <- 1.50
+    alturaFelisberto <- 1.10
+
+    // Taxas de crescimento por ano
+    taxaCrescimentoAnacleto <- 0.02   // 2 centímetros por ano
+    taxaCrescimentoFelisberto <- 0.03 // 3 centímetros por ano
+
+    // Inicialização do contador de anos
+    anos <- 0
+
+    // Enquanto a altura de Felisberto for menor ou igual à altura de Anacleto
+    ENQUANTO alturaFelisberto <= alturaAnacleto FAÇA
+        // Incrementa as alturas com as taxas de crescimento
+        alturaAnacleto <- alturaAnacleto + taxaCrescimentoAnacleto
+        alturaFelisberto <- alturaFelisberto + taxaCrescimentoFelisberto
+
+        // Incrementa o contador de anos
+        anos <- anos + 1
+    FIM ENQUANTO
+
+    // Imprime o resultado
+    ESCREVER "Serão necessários ", anos, " anos para Felisberto ser maior que Anacleto."
+FIM
